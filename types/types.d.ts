@@ -21,6 +21,9 @@ export declare class UPS_APC_API {
     private readonly _password;
     constructor(host: string, username: string, password: string);
     getData(): Promise<{
+        loadInAmpere: number;
+        voltage: number;
         loadInWatt: number;
+        temperature: number;
     }>;
 }
