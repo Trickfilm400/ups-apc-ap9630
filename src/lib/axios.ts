@@ -35,8 +35,8 @@ export class Axios {
         req = req.replace(/\n/g, "");
         const dom = new JSDOM.JSDOM(req)
         const ampere = dom.window.document.getElementById("langLoadCurrent")?.parentElement?.parentElement?.childNodes.item(1);
-        const voltage = dom.window.document.getElementById("langOutputVoltage")?.parentElement?.parentElement?.childNodes.item(3);
-        const temperature = dom.window.document.getElementById("langInternalTemp")?.parentElement?.parentElement?.childNodes.item(3);
+        const voltage = dom.window.document.getElementById("langOutputVoltage")?.parentElement?.parentElement?.childNodes.item(1);
+        const temperature = dom.window.document.getElementById("langInternalTemp")?.parentElement?.parentElement?.childNodes.item(1);
         const ampere_number = ampere?.firstChild?.nodeValue ? parseFloat(ampere.firstChild.nodeValue) : -1
         const voltage_number = voltage?.firstChild?.nodeValue ? parseFloat(voltage.firstChild.nodeValue) : -1
         const temperature_number = temperature?.firstChild?.nodeValue ? parseFloat(temperature.firstChild.nodeValue.replace("°C", "")) : -1
