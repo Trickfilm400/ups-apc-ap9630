@@ -18,7 +18,10 @@ client.getData().then((res) => {
     console.log(res);
     /*
      * {
-            loadInWatt: number
+            loadInAmpere: number,
+            voltage: number,
+            loadInWatt: number,
+            temperature: number,
         }
      *
      *
