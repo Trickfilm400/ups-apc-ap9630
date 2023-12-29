@@ -44,7 +44,7 @@ export class Axios {
         return {
             loadInAmpere: ampere_number,
             voltage: voltage_number,
-            loadInWatt: ampere_number !== -1 && voltage_number !== -1 ? ampere_number * voltage_number : -1,
+            loadInWatt: ampere_number !== -1 && voltage_number !== -1 ? (Math.round((ampere_number * voltage_number + Number.EPSILON) * 100) / 100) : -1,
             temperature: temperature_number
         };
     }
