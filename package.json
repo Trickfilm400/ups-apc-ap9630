@@ -1,6 +1,6 @@
 {
   "name": "@trickfilm400/ups-apc-ap9630",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "UPS Management Card 2 Client to fetch data via HTTP",
   "main": "dist/index.js",
   "typings": "types/types.d.ts",
