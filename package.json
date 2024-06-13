@@ -16,15 +16,19 @@
     "ap9630",
     "api"
   ],
+  "repository": {
+    "url": "https://github.com/Trickfilm400/ups-apc-ap9630",
+    "type": "git"
+  },
   "author": "Nico W. <info@ni-wa.de> (https://trickfilm400.de/)",
   "license": "MIT",
   "devDependencies": {
-    "@types/jsdom": "^21.1.6",
-    "@types/node": "^20.11.17",
-    "typescript": "^5.3.3"
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^20.14.2",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
-    "axios": "^1.6.7",
-    "jsdom": "^24.0.0"
+    "axios": "^1.7.2",
+    "jsdom": "^24.1.0"
   }
 }
