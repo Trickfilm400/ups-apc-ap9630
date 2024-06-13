@@ -29,4 +29,4 @@ client.getData().then((res) => {
 }).catch(console.error);
 ```
 
-&copy; 2023 Trickfilm400
+&copy; 2023-2024 Trickfilm400
